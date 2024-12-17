@@ -1,0 +1,437 @@
+:root {
+    --blanco: #ffffff;
+    --purpura: #2e094d;
+    --violeta: #8e1eeb;
+    --violetaMid: #8f1eeb77;
+    --lila: #a897ff;
+    --lima: #ebfc79;
+    --rosa: #fd24a8;
+    --rosaMid: #fd24a66f;
+    --misty: #00000086;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: var(--blanco);
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  .js-scroll {
+    transition: opacity 1.8s;
+  }
+
+  .upButton {
+    z-index: 10;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 550px;
+    right: 0;
+    left: 0;
+    height: 50px;    
+    margin: auto auto;
+    border: 3px solid var(--violeta);
+    border-radius: 9px;
+    background-color: var(--violetaMid);
+    width: 200px;
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: center;
+    color: var(--blanco);
+    text-shadow: 0 0 7px var(--lila);
+    text-shadow: 0 0 7px var(--lila);
+  }
+
+  #welcome-section {
+    width: 100vw;
+    height: 630px;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    background-image: url(../img/LuPerfil.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 2em var(--misty);
+    /** background-image: linear-gradient(to bottom right, var(--lila) 1%, var(--blanco) 40%); **/
+  }
+
+  #welcome-logo {
+    padding: 0px;
+    margin: 9px auto;
+    width: 100vw;
+    filter: drop-shadow(1px 1px 1px var(--lila))
+            drop-shadow(0 0 3px var(--blanco))
+            drop-shadow(0 0 7px var(--blanco))
+            ;
+  }
+
+  #info-section, #fecha-section, #pago-section {
+    background-color: var(--violeta);
+    padding-top: 12px;
+    margin-bottom: 0;
+  }
+
+  #info-section p, #incluye-section p, #fecha-section p, #pago-section p {
+    margin: 0;
+    padding: 25px 40px;
+    color: var(--blanco);
+  }
+
+  #info-section {
+    padding-bottom: 20px;
+  }
+
+  #info-pregunta, #info-respuesta {
+    font-size: 1.5em;
+    text-align: start;
+  }
+
+  .texto-principal {
+    font-size: 1.1em;
+    text-align: start;
+    line-height: 1.4em;
+    font-weight: 300;
+  }
+
+  #actividades-section {
+    background-color: var(--blanco);
+    color: var(--violeta);
+    padding-bottom: 40px;
+  }
+
+  #actividades-section h2 {
+    margin-top: 30px;
+    padding: 25px 40px;
+  }
+
+  #actividades-section ul {
+    margin-top: 0;
+    padding: 5px 60px;
+  }
+
+  #actividades-section ul li {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+
+  #actividades-section p, #presencial-section p, #bio-section p{
+    margin: 0;
+    padding: 15px 40px;
+    color: var(--violeta);
+  }
+
+  #incluye-section {
+    padding-bottom: 40px;
+    padding-top: 10px;
+    background-color: var(--violeta);
+    margin-bottom: 0;
+  }
+
+  #incluye-section h2, #fecha-section h2, #pago-section h2 {
+    padding: 25px 40px;
+    color: var(--blanco);
+    font-size: 1.6em;
+  }
+
+  #incluye-section p {
+    font-size: 1.1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #presencial-section h2, #bio-section h2 {
+    margin-top: 20px;
+    padding: 25px 40px;
+    color: var(--violeta);
+    font-size: 1.6em;
+  }
+
+  #presencial-section {
+    padding-bottom: 45px;
+  }
+
+  #fecha-section {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #fecha-section p {
+    text-align: start;
+  }
+
+  #fecha-section h3 {
+    color: var(--blanco);
+  }
+
+  .midButton {
+    text-decoration: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    border: 3px solid var(--rosa);
+    border-radius: 9px;
+    background-color: var(--rosaMid);
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: center;
+    margin: auto auto;
+    color: var(--blanco);
+    text-shadow: 0 0 7px var(--lila);
+    text-shadow: 0 0 7px var(--lila);
+  }
+
+  #lugar {
+    font-size: 1.5em;
+  }
+
+  #valor {
+    padding-top: 18px;
+    font-size: 1.8em;
+  }
+
+  #nov {
+    color: var(--lima);
+  }
+
+  #descuento {
+    font-size: 2em;
+    color: var(--lima);
+  }
+
+  #modalidad {
+    padding-top: 0;
+    margin-top: -30px;
+  }
+
+  #cuotas {
+    color: var(--lima);
+    font-weight: 900;
+  }
+
+  #bio-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  #bio-section h2 {
+    text-align: center;
+  }
+
+  #bio__foto {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 7px var(--lila);
+    transition: all .3s ease-in-out;
+  }
+
+  /*
+  .bio__foto--tilted {
+    transform: scale(.8)
+               translateY(-10px)
+               perspective(200px)
+               rotateX(10deg);
+    opacity: .3;
+  }
+
+  .moveUp {
+    animation: moveUp .7s ease forwards;
+  }
+
+  @keyframes moveUp {
+    from {transform: translateY(50px);}
+    to {transform: translateY(0px);}
+  }
+
+  #bio__avatar {
+    position: absolute;
+    top: 0;
+    height: 36vh;
+    opacity: 0;
+    z-index: -10;
+    transition: all .3s ease;
+  }
+
+  #bio__heart {
+    position: absolute;
+    top: 15vh;
+    font-size: 40px;
+    vertical-align: middle;
+    line-height: 200px;
+    opacity: 0;
+    z-index: -10;
+    transition: all .1s ease;
+  }
+  */
+  #bio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  #pago-section {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--violeta);
+  }
+
+  #admision-text {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 70%;
+  }
+
+  .downButton {
+    text-decoration: none;
+    position: relative;
+    margin: 7% auto;
+    padding: 5px 30px;
+    border: 3px solid var(--rosa);
+    border-radius: 9px;
+    background-color: var(--rosaMid);
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: center;
+    color: var(--blanco);
+    text-shadow: 0 0 7px var(--lila);
+    text-shadow: 0 0 7px var(--lila);
+  }
+
+  footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--lila);
+  }
+
+  footer p {
+    color: var(--blanco);
+    font-family: 'Montserrat', sans;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  /* DESKTOP */
+
+  @media only screen and (min-width: 768px) {
+
+    #welcome-section {
+      height: 100vh;
+      background-position: center;
+    }
+    
+    #welcome-logo {
+      width: 65vw;
+      float: right;
+      transition: all 1s ease-in-out;
+    }
+
+    #welcome-logo:hover {
+      filter: drop-shadow(0 0 7px var(--lila));
+      filter: drop-shadow(0 0 18px var(--misty));
+    }
+
+    .upButton {
+      position: absolute;
+      top: 80%;
+      left: 60%;
+      font-size: 36px;
+      transition: all .5s ease-in-out;
+      width: 300px;
+      height: auto;
+      line-height: 36px;
+      padding: 18px;
+    }
+
+    #info-section, #actividades-section, #incluye-section, #fecha-section, #pago-section, #presencial-section {
+      padding: 2% 7%;
+      margin: auto;
+      padding-bottom: 70px;
+    }
+
+    #actividades-section, #incluye-section {
+      padding-bottom: 70px;
+    }
+
+    .midButton, .downButton {
+      transition: all .5s ease-in-out;
+    }
+
+    .midButton:hover, .downButton:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 12px var(--blanco);
+      box-shadow: 0 0 18px var(--rosa);
+    }
+
+    .upButton:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 12px var(--blanco);
+      box-shadow: 0 0 18px var(--lila);
+    }
+
+    #bio-container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-content: center;
+      width: 80%;
+      margin: auto auto;
+    }
+
+    #bio-text-container {
+      width: 50%;     
+      margin: auto auto;
+      margin-right: 0;
+    }
+
+    #bio__foto {
+      width: 30%;
+      margin: auto auto;
+      margin-left: 0;
+    }
+
+    #bio-section h2 {
+      text-align: center;
+    }
+
+    #bio-section {
+    margin-bottom: 70px;
+    }
+
+    #pago-section {
+      margin: auto auto;
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+
+    .downButton {
+      margin: 30px auto;
+    }
+
+  } 
