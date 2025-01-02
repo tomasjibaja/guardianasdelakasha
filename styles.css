@@ -1,14 +1,25 @@
 :root {
     --blanco: #ffffff;
+    --blanco-70: rgba(255, 255, 255,.7);
+    --blanco-50: rgba(255, 255, 255,.5);
+    --blanco-30: rgba(255, 255, 255,.3);
     --purpura: #2e094d;
     --violeta: #8e1eeb;
     --violetaMid: #8f1eeb77;
     --lila: #a897ff;
+    --lila-90: rgba(168, 151, 255, .9);
+    --lila-70: rgba(168, 151, 255, .7);
+    --lila-30: rgba(168, 151, 255, .3);
+    --lila-dark: #715ed0;
     --lima: #ebfc79;
     --rosa: #fd24a8;
     --rosa-70: rgba(253, 36, 168,.7);
     --rosaMid: #fd24a66f;
     --misty: #00000086;
+    --shadow-90: rgba(0,0,0,.9);
+    --shadow-70: rgba(0,0,0,.7);
+    --shadow-50: rgba(0,0,0,.5);
+    --shadow-30: rgba(0,0,0,.3);
   }
 
   html {
@@ -26,6 +37,10 @@
 
   strong {
     font-weight: 700;
+  }
+
+  b {
+    font-weight: 500;
   }
 
   .js-scroll {
@@ -58,24 +73,29 @@
   }
 
   #welcome-section {
-    width: 100vw;
-    height: 630px;
-    padding: 0px;
-    margin: 0px;
-    top: 0px;
-    background-image: url(../img/LuPerfil.jpg);
-    background-size: cover;
-    box-shadow: inset 0 0 2em var(--misty);
-    /** background-image: linear-gradient(to bottom right, var(--lila) 1%, var(--blanco) 40%); **/
+    height: 100vh;
+    background-color: black;
+  }
+
+  video {
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: .7;
   }
 
   #welcome-logo {
-    padding: 0px;
-    margin: 9px auto;
+    padding: 0;
+    margin: auto;
+    margin-top: 10%;
     width: 100vw;
-    filter: drop-shadow(1px 1px 1px var(--lila))
-            drop-shadow(0 0 3px var(--blanco))
-            drop-shadow(0 0 7px var(--blanco))
+    filter: drop-shadow(1px 1px 1px var(--blanco-50))
+            drop-shadow(0 0 3px var(--shadow-30))
+            drop-shadow(0 0 7px var(--blanco-70))
             ;
   }
 
@@ -211,6 +231,14 @@
     color: var(--lima);
   }
 
+  #precio {
+    background-color: var(--rosa-70);
+    padding: 3px 7px;
+    border-radius: 7px;
+    width: fit-content;
+    margin: 20px auto;
+  }
+
   #descuento {
     font-size: 2em;
     color: var(--lima);
@@ -218,10 +246,8 @@
 
   #oferta {
     color: var(--lima);
-    background-color: var(--rosa-70);
-    padding: 3px 12px;
-    border-radius: 7px;
   }
+
 
   #modalidad {
     padding-top: 0;
@@ -230,7 +256,71 @@
 
   #cuotas {
     color: var(--lima);
-    font-weight: 900;
+    font-weight: 700;
+  }
+
+  #testimonios-section {
+    background-color: var(--lila);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #testimonios-section > h2 {
+    color: var(--blanco);
+    margin: 0;
+    text-align: center;
+  }
+
+  .testimonios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 30px;
+    padding: 9%;
+  }
+
+  .testimonio-card {
+    position: relative;
+    color: var(--lila-dark);
+    background-color: var(--blanco);
+    padding: 20px 30px;
+    padding-bottom: 20px;
+    border: 1px solid var(--violetaMid);
+    border-radius: 9px;
+    text-align: center;
+    text-justify: inter-cluster;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 
+      3px 12px 30px 1px var(--shadow-30),
+      -3px 12px 30px 3px var(--blanco-30),
+      -9px -9px 18px 1px inset var(--lila-70)
+    ;
+  }
+
+  .quotation {
+    transform: rotate(180deg);
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    top: 90px;
+    left: 20px;
+    font-size: 10rem;
+    color: var(--lila);
+    opacity: .1;
+  }
+
+  .card-text {
+    font-weight: 300;
+    font-size: 1rem;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .02rem;
+  }
+
+  .card-name {
+    font-weight: 600;
+    font-size: .9rem;
   }
 
   #bio-section {
@@ -356,29 +446,32 @@
 
   @media only screen and (min-width: 768px) {
 
-    #welcome-section {
-      height: 100vh;
-      background-position: center;
+    html::-webkit-scrollbar {
+      display: none;
+    }
+
+    html {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    video {
     }
     
     #welcome-logo {
+      position: absolute;
+      top: 0;
+      left: 10%;
       width: 65vw;
-      float: right;
-      transition: all 1s ease-in-out;
-    }
-
-    #welcome-logo:hover {
-      filter: drop-shadow(0 0 7px var(--lila));
-      filter: drop-shadow(0 0 18px var(--misty));
     }
 
     .upButton {
       position: absolute;
       top: 80%;
       left: 60%;
-      font-size: 36px;
+      font-size: 27px;
       transition: all .5s ease-in-out;
-      width: 300px;
+      width: 200px;
       height: auto;
       line-height: 36px;
       padding: 18px;
@@ -408,6 +501,16 @@
       transform: scale(1.1);
       box-shadow: 0 0 12px var(--blanco);
       box-shadow: 0 0 18px var(--lila);
+    }
+
+    .testimonios-container {
+      flex-direction: row;
+      padding: 5%;
+    }
+
+    .testimonio-card {
+      padding: 30px 50px;
+      padding-bottom: 20px;
     }
 
     #bio-container {
