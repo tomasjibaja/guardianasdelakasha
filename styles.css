@@ -6,6 +6,7 @@
     --lila: #a897ff;
     --lima: #ebfc79;
     --rosa: #fd24a8;
+    --rosa-70: rgba(253, 36, 168,.7);
     --rosaMid: #fd24a66f;
     --misty: #00000086;
   }
@@ -215,6 +216,13 @@
     color: var(--lima);
   }
 
+  #oferta {
+    color: var(--lima);
+    background-color: var(--rosa-70);
+    padding: 3px 12px;
+    border-radius: 7px;
+  }
+
   #modalidad {
     padding-top: 0;
     margin-top: -30px;
@@ -237,7 +245,8 @@
   }
 
   #bio__foto {
-    width: 80vw;
+    height: 400px;
+    object-fit: cover;
     margin: 0 auto;
     margin-bottom: 20px;
     border-radius: 3px;
@@ -330,6 +339,12 @@
     background-color: var(--lila);
   }
 
+  .footer-link {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 600;
+  }
+
   footer p {
     color: var(--blanco);
     font-family: 'Montserrat', sans;
@@ -397,23 +412,22 @@
 
     #bio-container {
       display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-content: center;
-      width: 80%;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 70%;
       margin: auto auto;
     }
 
     #bio-text-container {
-      width: 50%;     
-      margin: auto auto;
-      margin-right: 0;
+      width: 50%;
+      margin: 0;
     }
 
     #bio__foto {
       width: 30%;
-      margin: auto auto;
-      margin-left: 0;
+      min-width: 300px;
+      margin: 0;
     }
 
     #bio-section h2 {
