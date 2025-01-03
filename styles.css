@@ -6,6 +6,7 @@
     --purpura: #2e094d;
     --violeta: #8e1eeb;
     --violetaMid: #8f1eeb77;
+    --uva: #a600e8;
     --lila: #a897ff;
     --lila-90: rgba(168, 151, 255, .9);
     --lila-70: rgba(168, 151, 255, .7);
@@ -189,6 +190,10 @@
   #fecha-section {
     text-align: center;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   #fecha-section p {
@@ -248,15 +253,18 @@
     color: var(--lima);
   }
 
-
   #modalidad {
     padding-top: 0;
-    margin-top: -30px;
+    background-color: var(--uva);
+    border-radius: 7px;
+    width: fit-content;
+    margin: 20px auto;
   }
 
   #cuotas {
     color: var(--lima);
     font-weight: 700;
+    font-size: 2.5rem;
   }
 
   #testimonios-section {
