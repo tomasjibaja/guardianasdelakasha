@@ -44,6 +44,15 @@
     font-weight: 500;
   }
 
+  .lima-text {
+    color: var(--lima);
+  }
+
+  .letra-chica {
+    font-size: .7em;
+    font-weight: 300;
+  }
+
   .js-scroll {
     transition: opacity 1.8s;
   }
