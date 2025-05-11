@@ -82,6 +82,18 @@
     text-shadow: 0 0 7px var(--lila);
   }
 
+  .upButton::after {
+    content: 'ESPECIAL PACHAMAMA';
+    position: absolute;
+    margin: auto;
+    line-height: 36px;
+    font-size: 36px;
+    text-align: center;
+    transform: translateY(-20vh);
+    color: var(--blanco);
+    text-shadow: 0 0 12px var(--uva);
+  }
+
   #welcome-section {
     height: 100vh;
     background-color: black;
@@ -108,6 +120,7 @@
             drop-shadow(0 0 7px var(--blanco-70))
             ;
   }
+
 
   #info-section, #fecha-section, #pago-section {
     background-color: var(--violeta);
@@ -196,6 +209,14 @@
     padding-bottom: 45px;
   }
 
+  #cupos {
+    color: var(--rosa) !important;
+    font-weight: 700;
+    font-size: 1.6em;
+    margin: auto;
+    text-align: center;
+  }
+
   #fecha-section {
     text-align: center;
     display: flex;
@@ -226,6 +247,7 @@
     line-height: 55px;
     text-align: center;
     margin: auto;
+    margin-bottom: 30px;
     color: var(--blanco);
     text-shadow: 0 0 7px var(--lila);
     text-shadow: 0 0 7px var(--lila);
@@ -492,6 +514,10 @@
       height: auto;
       line-height: 36px;
       padding: 18px;
+    }
+
+    .upButton::after {
+      transform: translateY(-15vh);
     }
 
     #info-section, #actividades-section, #incluye-section, #fecha-section, #pago-section, #presencial-section {
